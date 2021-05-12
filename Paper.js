@@ -11,7 +11,7 @@ class Paper{
 
        } 
        
-       this.body = Bodies.circle(x, y, r, options);
+       this.body = Bodies.circle(x, y, r/2-12, options);
 
        this.r = r
        this.image = loadImage("paper.png")
@@ -22,7 +22,7 @@ class Paper{
     display(){
 
        imageMode(CENTER)
-       image(this.image, this.body.position.x, this.body.position.y, this.r*2, this.r*2);
+       image(this.image, this.body.position.x, this.body.position.y, this.r, this.r);
 
     }
 }
